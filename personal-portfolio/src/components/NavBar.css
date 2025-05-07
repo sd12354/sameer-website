@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, #1e1e1e, #191919, #000000); /* Dark purple/blue */
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-links li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

@@ -1,0 +1,108 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  max-width: 60%;
+}
+
+.headshot-orbit-wrapper {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  margin-top: 2rem;
+  overflow: visible;
+}
+
+.headshot-card {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 320px;
+  height: fit-content;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.15s ease-in-out;
+}
+
+.headshot {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  height: 200px;
+  width: fit-content;
+}
+
+.headshot-card h2 {
+  margin: 0;
+  color: #ff69b4;
+}
+
+.orbit-wrapper {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform-origin: center center;
+  z-index: 3; /* on top of card */
+}
+
+.orbit-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Evenly spaced in a circular pattern (radius = 170px around center) */
+.orbit-0 { transform: translate(-50%, -150px); }         /* Top */
+.orbit-1 { transform: translate(106px, -106px); }        /* Top-right */
+.orbit-2 { transform: translate(150px, -50%); }          /* Right */
+.orbit-3 { transform: translate(106px, 106px); }         /* Bottom-right */
+.orbit-4 { transform: translate(-50%, 150px); }          /* Bottom */
+.orbit-5 { transform: translate(-106px, 106px); }        /* Bottom-left */
+.orbit-6 { transform: translate(-150px, -50%); }         /* Left */
+.orbit-7 { transform: translate(-106px, -106px); }       /* Top-left */
+
+.typed-text {
+  color: #ff69b4;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.custom-cursor {
+  width: 24px;
+  height: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 2px solid #ff69b4;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  background-color: transparent;
+}
+
+.intro-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.intro-btn {
+  padding: 0.75rem 1.5rem;
+  background: #ff69b4;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.intro-btn:hover {
+  background: #e0579a;
+}
