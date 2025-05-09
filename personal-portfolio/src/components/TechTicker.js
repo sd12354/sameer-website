@@ -1,12 +1,13 @@
 import React from 'react';
 import {
-  FaCamera,
+  FaJira,
   FaHtml5,
   FaCss3Alt,
   FaJs,
   FaReact,
   FaPython,
-  FaJava
+  FaJava,
+  FaBehance,
 } from 'react-icons/fa';
 import { SiAdobe, SiAmazonwebservices } from 'react-icons/si';
 import { GiBasketballBall } from 'react-icons/gi';
@@ -20,6 +21,8 @@ const TechTicker = () => {
     <FaReact key="react" />,
     <FaPython key="python" />,
     <FaJava key="java" />,
+    <FaJira key="jira" />,
+    <FaBehance key="behance" />,
     <SiAdobe key="adobe" />,
     <SiAmazonwebservices key="aws" />,
   ];
